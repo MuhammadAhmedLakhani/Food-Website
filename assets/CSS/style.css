@@ -20,7 +20,9 @@
     --light-pink: #F172281A;
     --white-color: #FFFFFF;
 
-    --grey-color:#757575;
+    --grey-color: #757575;
+    --theme-grey: #F5F5F5;
+    --theme-black:#424242;
 
     /* Typography Scale */
 
@@ -50,7 +52,7 @@
 
 @font-face {
     font-family: SourceSansPro;
-    src: url("./Fonts/SourceSans3-Regular.ttf");
+    src: url("../Fonts/source-sans-pro.bold.ttf");
 }
 
 @font-face {
@@ -73,6 +75,7 @@ h1 {
     font-size: var(--font-xxl);
     font-weight: var(--font-bold);
     color: var(--white-color);
+    font-family: SourceSansPro;
 
 }
 
@@ -124,9 +127,14 @@ a {
     font-weight: var(--font-normal);
 }
 
+.search-container h5 {
+    color: var(--theme-black);
+}
+
 .login-btn span {
     font-size: var(--font-normal);
 }
+
 
 
 /* header section ends here  */
@@ -134,18 +142,19 @@ a {
 /* banner section starts here*/
 
 #banner-section {
-    height: 70vh;
-    background-image: url('../Images/banner.png');
+    background: url('../Images/banner.png') center/cover no-repeat;
+    padding-top: 132px;
 }
 
 .banner-modal {
     box-shadow: 0 20 40 0 #FFAE004A,
         0 5 10 0 #FFAE0042;
-
-    height: 40vh;
     background-color: #fff;
-    padding: 24px;
     border-radius: 16px;
+}
+
+.modal-tabs {
+    padding: 29px 24px;
 }
 
 .delivery-btn {
@@ -153,20 +162,47 @@ a {
     background-color: #F172281A;
     color: var(--combine-color);
 }
+
 .delivery-btn span {
     font-size: var(--font-md);
     font-weight: var(--font-bold);
     border-radius: 8px;
 }
+
 .pickup-btn {
     padding: 10px 24px;
     background-color: var(--white-color);
     color: var(--grey-color);
 }
+
 .pickup-btn span {
     font-size: var(--font-md);
     font-weight: var(--font-bold);
     border-radius: 8px;
+}
+
+
+.modal-find {
+    padding: 24px;
+}
+
+.input-container{
+    width: 70%;
+    border-radius: 8px;
+    padding: 7px 8px 16px 12px;
+    background-color: var(--theme-grey);
+}
+.input-container input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.find-btn {
+    padding: 21px 48px;
+    border-radius: 8px;
+    background: linear-gradient(to right,#FF7A7A , #F65900);
+    color: var(--white-color);
 }
 
 /* banner section ends here*/
