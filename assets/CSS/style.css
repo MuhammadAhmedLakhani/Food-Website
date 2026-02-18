@@ -15,14 +15,15 @@
     --gradient-colour1: #FFB800;
     --gradient-colour2: #FF8A00;
 
-    --combine-color: #F17228;
+    --combine-color: #F17228; 
 
     --light-pink: #F172281A;
     --white-color: #FFFFFF;
 
     --grey-color: #757575;
     --theme-grey: #F5F5F5;
-    --theme-black:#424242;
+    --theme-black: #424242;
+    --badge-bg: #F1722833;
 
     /* Typography Scale */
 
@@ -77,6 +78,12 @@ h1 {
     color: var(--white-color);
     font-family: SourceSansPro;
 
+}
+
+h3 {
+    font-size: var(--font-lg);
+    line-height: 1.2;
+    font-weight: var(--font-bold);
 }
 
 h4 {
@@ -137,6 +144,7 @@ a {
 
 
 
+
 /* header section ends here  */
 
 /* banner section starts here*/
@@ -186,12 +194,13 @@ a {
     padding: 24px;
 }
 
-.input-container{
+.input-container {
     width: 70%;
     border-radius: 8px;
     padding: 7px 8px 16px 12px;
     background-color: var(--theme-grey);
 }
+
 .input-container input {
     border: 0;
     outline: 0;
@@ -201,8 +210,24 @@ a {
 .find-btn {
     padding: 21px 48px;
     border-radius: 8px;
-    background: linear-gradient(to right,#FF7A7A , #F65900);
+    background: linear-gradient(to right, #FF7A7A, #F65900);
     color: var(--white-color);
 }
 
 /* banner section ends here*/
+
+/* dish section starts here */
+#dishes-section {
+    padding: 80px 0px;
+}
+
+.dish-badge {
+    padding: 8px 16px;
+    background-color:var(--badge-bg) ;
+    color: var(--combine-color);
+}
+.dishes-details {
+    margin-top: 20px;
+    max-width: 70%;
+}
+/* dish section ends here */
