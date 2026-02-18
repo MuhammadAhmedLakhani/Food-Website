@@ -15,7 +15,7 @@
     --gradient-colour1: #FFB800;
     --gradient-colour2: #FF8A00;
 
-    --combine-color: #F17228; 
+    --combine-color: #F17228;
 
     --light-pink: #F172281A;
     --white-color: #FFFFFF;
@@ -25,12 +25,15 @@
     --theme-black: #424242;
     --badge-bg: #F1722833;
 
+    --how-bg-1: #FDEDCA00;
+    --how-bg-2: #FFCE67;
+
     /* Typography Scale */
 
     --font-sm: 16px;
     --font-md: 18px;
     --font-lg: 22px;
-
+    --font-xl: 43px;
     --font-xxl: 88px;
 
     /* Font Weights */
@@ -77,7 +80,11 @@ h1 {
     font-weight: var(--font-bold);
     color: var(--white-color);
     font-family: SourceSansPro;
+}
 
+h2 {
+    font-size: var(--font-xl);
+    font-weight: var(--font-bold);
 }
 
 h3 {
@@ -223,11 +230,33 @@ a {
 
 .dish-badge {
     padding: 8px 16px;
-    background-color:var(--badge-bg) ;
+    background-color: var(--badge-bg);
     color: var(--combine-color);
 }
+
 .dishes-details {
     margin-top: 20px;
     max-width: 70%;
 }
+
 /* dish section ends here */
+
+/* How section starts here */
+#how-section {
+    height: 80vh;
+    padding-top: 80px;
+    background: linear-gradient(180deg,
+            #FFF4E0 0%,
+            #FFF4E0 3%,
+            rgba(253, 237, 202, 0) 100%);
+}
+
+.how-r1 {
+    padding-bottom: 71px;
+}
+
+.how-r1 h2 {
+    color: var(--combine-color);
+}
+
+/* How section ends here */
