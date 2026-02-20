@@ -10,6 +10,15 @@
 
     <link rel="stylesheet" href="./assets/CSS/bootstrap.css">
 
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Bootstrap JS -->
 
     <script src="./assets/JS/bootstrap.js"></script>
@@ -22,7 +31,7 @@
 <body>
 
     <!-- Header Section starts here -->
-    <header id="header-section">
+    <!-- <header id="header-section">
         <div class="container">
             <div class="d-flex align-items-baseline justify-content-between">
                 <div class="logo-brand"><img src="./assets/Images/resize-logo.png"></div>
@@ -46,15 +55,15 @@
             </div>
         </div>
         </div>
-    </header>
+    </header> -->
     <!-- Header Section ends here -->
 
     <!-- Banner section starts here -->
     <section id="banner-section">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <div class="banner-details">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="banner-details text-center text-lg-start">
                         <h1>Are you starving?</h1>
                         <h4>Within a few clicks, find meals that are accessible near you</h4>
                     </div>
@@ -69,7 +78,7 @@
                                 <span>Pickup</span>
                             </a>
                         </div>
-                        <div class="modal-find d-flex gap-4">
+                        <div class="modal-find d-flex gap-4 flex-wrap">
                             <div class="input-container d-flex align-items-center gap-3">
                                 <img src="./assets/Images/red-address-icon.png">
                                 <input type="text" placeholder="Enter Your Address">
@@ -81,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6 banner-image order-1 order-lg-2">
                     <img src="./assets/Images/banner-right-Image.png">
                 </div>
             </div>
@@ -93,7 +102,7 @@
     <section id="dishes-section">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-6 col-lg-5">
                     <div class="card">
                         <img src="./assets/Images/d-1.png" alt="" class="card-img-top">
 
@@ -103,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="card">
                         <img src="./assets/Images/d-2.png" alt="" class="card-img-top">
 
@@ -113,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="card">
                         <img src="./assets/Images/d-3.png" alt="" class="card-img-top">
 
@@ -123,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="card">
                         <img src="./assets/Images/d-4.png" alt="" class="card-img-top">
 
@@ -142,33 +151,33 @@
     <section id="how-section">
         <div class="container">
             <div class="row how-r1 justify-content-center">
-                <div class="col-3">
-                    <h2>How does it work</h2>
+                <div class="col-lg-3">
+                    <h2 class="text-center">How does it work</h2>
                 </div>
             </div>
             <div class="row how-r2">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="step-container text-center">
                         <img src="./assets/Images/location-icon.svg">
                         <h3>Select location</h3>
                         <p class="body-1">Choose the location where your food will be delivered.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="step-container text-center">
                         <img src="./assets/Images/order-icon.svg">
                         <h3>Choose order</h3>
                         <p class="body-1">Check over hundreds of menus to pick your favorite food</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="step-container text-center">
                         <img src="./assets/Images/pay-icon.svg">
                         <h3>Pay advanced</h3>
                         <p class="body-1">It's quick, safe, and simple. Select several methods of payment</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <div class="step-container text-center">
                         <img src="./assets/Images/meals-icon.svg">
                         <h3>Enjoy meals</h3>
@@ -178,6 +187,144 @@
             </div>
     </section>
     <!-- How section ends here -->
+
+
+    <!-- Popular Items Section -->
+    <section class="popular-section">
+        <div class="container">
+            <h2 class="section-title">Popular items</h2>
+
+            <!-- Owl Carousel -->
+            <div class="owl-carousel owl-theme popular-carousel">
+
+                <!-- Card 1 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Cheese Burger"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Cheese Burger</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Burger Arena</span>
+                        </div>
+                        <p class="food-card__price">$3.88</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=400" alt="Toffe's Cake"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Toffe's Cake</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Top Sticks</span>
+                        </div>
+                        <p class="food-card__price">$4.00</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400" alt="Dancake"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Dancake</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cake World</span>
+                        </div>
+                        <p class="food-card__price">$1.99</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400" alt="Crispy Sandwich"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Crispy Sandwich</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Fastfood Dine</span>
+                        </div>
+                        <p class="food-card__price">$3.00</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400" alt="Thai Soup"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Thai Soup</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Foody man</span>
+                        </div>
+                        <p class="food-card__price">$2.79</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza"
+                        class="food-card__image">
+                    <div class="food-card__content">
+                        <h3 class="food-card__title">Deluxe Pizza</h3>
+                        <div class="food-card__location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pizza Palace</span>
+                        </div>
+                        <p class="food-card__price">$5.99</p>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (Owl Carousel depends on it)  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Initialize Owl Carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.popular-carousel').owlCarousel({
+                loop: true,              // Infinite loop
+                margin: 20,              // Gap between cards
+                nav: true,               // Show arrows
+                dots: true,              // Show dots navigation
+                // autoplay: true,          // Auto scroll
+                // autoplayTimeout: 3000,   // 3 seconds
+                autoplayHoverPause: true, // Pause on hover
+                responsive: {
+                    0: {
+                        items: 1             // Mobile: 1 card
+                    },
+                    600: {
+                        items: 2             // Tablet: 2 cards
+                    },
+                    1000: {
+                        items: 3             // Desktop: 3 cards
+                    },
+                    1400: {
+                        items: 4             // Large screen: 4 cards
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

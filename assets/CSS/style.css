@@ -21,8 +21,8 @@
     --white-color: #FFFFFF;
 
     --grey-color: #757575;
-    --theme-grey: #F5F5F5;   
-    --theme-grey-500:#9E9E9E;
+    --theme-grey: #F5F5F5;
+    --theme-grey-500: #9E9E9E;
     --theme-black: #424242;
     --badge-bg: #F1722833;
 
@@ -112,7 +112,7 @@ a {
 }
 
 
-.body-1{
+.body-1 {
     font-size: var(--font-md);
     font-weight: var(--font-regular);
     line-height: 1.4;
@@ -269,9 +269,244 @@ a {
 }
 
 
-.step-container h3{
+.step-container h3 {
     color: #434343;
 }
 
 
 /* How section ends here */
+
+/* Popular Items Section */
+.popular-section {
+    padding: 60px 20px;
+    background: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Food Card */
+.food-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    /* Owl carousel ke liye space */
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.food-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-card__content {
+    padding: 20px;
+}
+
+.food-card__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.food-card__location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #F5A623;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.food-card__location i {
+    font-size: 16px;
+}
+
+.food-card__price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.btn-order {
+    width: 100%;
+    padding: 14px;
+    background: #FF6B18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-order:hover {
+    background: #E55A0F;
+}
+
+/* Custom Owl Navigation Arrows */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #F5A623 !important;
+    color: white !important;
+    border-radius: 50%;
+    font-size: 24px !important;
+    line-height: 50px !important;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    background: #E59520 !important;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Mobile pe arrows container ke andar */
+@media (max-width: 768px) {
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 10px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        right: 10px;
+    }
+}
+
+/* Owl Dots (optional) */
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.owl-carousel .owl-dot.active {
+    background: #F5A623;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsiveness starts  here */
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    h1 {
+        font-size: 68px;
+    }
+
+
+    #banner-section {
+        padding-top: 35px;
+    }
+
+    #banner-section .row {
+        gap: 30px
+    }
+
+    .banner-image>img {
+        width: 100%
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    #dishes-section {
+        padding: 40px 0px;
+    }
+
+    #dishes-section .row {
+        gap: 30px
+    }
+}
+
+
+
+
+
+/* Mobile Responsiveness ends  here */
+
+/* Tablet Responsiveness starts here  */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    h1 {
+        font-size: 68px;
+    }
+
+    #banner-section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    #banner-section .row {
+        gap: 30px
+    }
+
+    .banner-image>img {
+        width: 90%
+    }
+
+    #dishes-section {
+        padding: 40px 0px;
+    }
+
+    #how-section {
+        padding: 40px 0px;
+    }
+
+
+
+}
+
+
+/* Tablet Responsiveness ends here  */
