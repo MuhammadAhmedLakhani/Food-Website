@@ -516,10 +516,40 @@ a {
 #featured-section .top-row {
     padding-bottom: 64px;
 }
-
+.my-card {
+    position: relative;
+}
 .my-card img {
     border-radius: 16px;
+    
 }
+
+.discount-badge {
+    padding: 8px 16px;
+    background-color: #F17228;
+    border-radius: 8px;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+.discount-badge h3{
+    color: var(--white-color);
+}
+.time-badge {
+    padding: 8px 16px;
+    background-color: #FFB30E;
+    border-radius: 8px;
+    position: absolute;
+    top: 5%;
+    left: 52%;
+}
+
+.time-badge h3{
+    color: var(--white-color);
+}
+
+
 
 
 .Featured-card-body {
@@ -584,6 +614,9 @@ a {
 .view-btn h5 {
     color: var(--white-color);
 }
+
+
+
 /* featured Section ends here */
 
 
