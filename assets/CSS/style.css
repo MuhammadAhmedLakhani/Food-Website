@@ -12,8 +12,9 @@
 :root {
     /* colors */
 
-    --gradient-colour1: #FFB800;
+    --gradient-colour1: #FFB800;       
     --gradient-colour2: #FF8A00;
+    --theme-primary:#FFB30E;
 
     --combine-color: #F17228;
 
@@ -23,11 +24,12 @@
     --grey-color: #757575;
     --theme-grey: #F5F5F5;
     --theme-grey-500: #9E9E9E;
-    --theme-black: #424242;
+    --theme-black: #424242;  
     --badge-bg: #F1722833;
 
     --how-bg-1: #FDEDCA00;
     --how-bg-2: #FFCE67;
+    --Gray900:#212121;
 
     /* Typography Scale */
 
@@ -231,6 +233,105 @@ a {
     color: var(--white-color);
 }
 
+.banner-image-container {
+    position: relative;
+}
+
+.banner-image {
+    background:url("../Images/banner-image.png")
+}
+
+
+.banner-image::before {
+
+
+    position: absolute;
+
+    content: "";
+   
+    width: 539px;
+    height: 540px;
+
+   
+    top: 11px;
+    left: 61px;
+
+   
+    transform: rotate(-180deg);
+
+   
+    border-radius: 50%;
+
+   
+    background:
+        radial-gradient(circle,
+            #CDCDCD 0%,
+   
+            #C4C4C4 40%,
+   
+            rgba(196, 196, 196, 0) 100%
+   
+        ), url("../Images/banner-image.png");
+
+   
+    mix-blend-mode: multiply;
+
+   
+    filter: blur(26.21px);
+
+   
+    z-index: 1;
+
+}
+
+/* Container */
+.banner-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Image */
+.banner-image {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    overflow: visible;
+    background: url("../Images/banner-image.png") center/cover no-repeat;
+    box-shadow: 
+        0 25px 70px rgba(0, 0, 0, 0.25),
+        0 15px 40px rgba(0, 0, 0, 0.15);
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    z-index: 10;
+}
+
+/* Blur Shadow Behind Image */
+.banner-image::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(205, 205, 205, 0.7) 0%,
+        rgba(196, 196, 196, 0.4) 40%,
+        rgba(196, 196, 196, 0) 100%
+    );
+    mix-blend-mode: multiply;
+    filter: blur(26px);
+    z-index: -1;
+}
+
+
+
+
+
 /* banner section ends here*/
 
 /* dish section starts here */
@@ -276,7 +377,7 @@ a {
 
 /* How section ends here */
 
-/* Popular Items Section */
+/* Popular Items Section starts here*/
 .popular-section {
     padding: 60px 20px;
     background: white;
@@ -302,7 +403,6 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 10px;
     /* Owl carousel ke liye space */
 }
 
@@ -396,37 +496,45 @@ a {
     transform: translateY(-50%) scale(1.1);
 }
 
-/* Mobile pe arrows container ke andar */
-@media (max-width: 768px) {
-    .owl-carousel .owl-nav button.owl-prev {
-        left: 10px;
-    }
-
-    .owl-carousel .owl-nav button.owl-next {
-        right: 10px;
-    }
-}
 
 /* Owl Dots (optional) */
 .owl-carousel .owl-dots {
-    text-align: center;
-    margin-top: 30px;
+    display: none;
+}/* Popular Items Section ends here*/
+
+/* featured Section starts here */
+
+
+.featured-heading {
+    padding-bottom: 88px;
+    color:  var(--Gray900);
+    
 }
 
-.owl-carousel .owl-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ddd;
-    margin: 0 5px;
-    display: inline-block;
+#featured-section .top-row{
+    padding-bottom: 64px;
 }
 
-.owl-carousel .owl-dot.active {
-    background: #F5A623;
+.Featured-card-body {
+    padding-top: 24px;
+    padding-bottom: 36px;
 }
 
 
+.Featured-card-body h3{
+    color: var(--theme-black);
+}
+
+
+.food-rating span {
+
+    color: var(--theme-primary);
+    font-size: var(--font-lg);
+    font-weight: var(--font-regular);
+    line-height: 1.2;
+}
+
+/* featured Section ends here */
 
 
 
@@ -443,6 +551,19 @@ a {
         font-size: 68px;
     }
 
+    .address-container {
+        display: none;
+    }
+
+    .logo-brand {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .right-btns {
+        flex-basis: 100%;
+        text-align: center;
+    }
 
     #banner-section {
         padding-top: 35px;
@@ -479,6 +600,13 @@ a {
 
 @media screen and (min-width:768px) and (max-width:991px) {
 
+    .address-container {
+        flex-basis: 100%;
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+
     h1 {
         font-size: 68px;
     }
@@ -503,10 +631,30 @@ a {
     #how-section {
         padding: 40px 0px;
     }
+}
+
+/* Tablet Responsiveness ends here  */
+
+/* Laptop responsiveness starts here */
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .address-container {
+        flex-basis: 100%;
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    #banner-section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
 
 
 
 }
 
-
-/* Tablet Responsiveness ends here  */
+/* Laptop responsiveness ends here */
