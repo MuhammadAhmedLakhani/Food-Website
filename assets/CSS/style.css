@@ -14,7 +14,7 @@
 
     --gradient-colour1: #FFB800;
     --gradient-colour2: #FF8A00;
-    --theme-primary: #FFB30E;                         
+    --theme-primary: #FFB30E;
 
     --combine-color: #F17228;
 
@@ -635,7 +635,7 @@ a {
 
 .feature-cont {
     width: 100%;
-    height: 100vh;
+    height: auto;
     max-width: 1230px;
     max-height: 246px;
     background-color: var(--white-color);
@@ -643,8 +643,7 @@ a {
     margin: 0 auto;
     padding: 55px;
     box-shadow: 0 27px 82px 0 #FFAE0047,
-        0 14px 15 0 #FFAE0003;
-
+        0 14px 15px 0 #FFAE0003;
 }
 
 .app-feature-text {
@@ -664,8 +663,8 @@ a {
 #install-section {
     /* height: 70vh; */
     background:
-    url("../Images/install-background.png"),
-    linear-gradient(to left, #FFAE00, #FF8A00);
+        url("../Images/install-background.png"),
+        linear-gradient(to left, #FFAE00, #FF8A00);
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -676,11 +675,11 @@ a {
     gap: 140px;
 }
 
-.install-description h1{
+.install-description h1 {
     font-size: 68px;
     font-weight: var(--font-bold);
     line-height: 1.06;
-    background: linear-gradient(to right,#FFB800,#FF8A00);
+    background: linear-gradient(to right, #FFB800, #FF8A00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -694,8 +693,8 @@ a {
 
 .store-btn {
     background-color: var(--white-color);
-    box-shadow: 0 20px 40px 0px #FFAE004A ,
-    0px 5px 10px 0px #FFAE0042;
+    box-shadow: 0 20px 40px 0px #FFAE004A,
+        0px 5px 10px 0px #FFAE0042;
     border-radius: 5px;
 }
 
@@ -792,6 +791,25 @@ a {
     #how-section {
         padding: 40px 0px;
     }
+
+
+    #install-section {
+        background-size: cover;
+    }
+
+    .isntall-row {
+        gap:40px
+    }
+
+    .feature-cont {
+        flex-direction: column;
+        max-height: none;
+        gap: 30px;
+    }
+
+    
+
+
 }
 
 /* Tablet Responsiveness ends here  */
