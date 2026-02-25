@@ -234,64 +234,87 @@ a {
     color: var(--white-color);
 }
 
+/* Banner Image Container */
 .banner-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
+/* Food Bowl Image */
 .banner-image {
-    background: url("../Images/banner-image.png")
+    /* Responsive width */
+     width: 100%;       
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    /* Circle */
+    border-radius: 50%;
+    overflow: visible;
+    
+    /* Image */
+    background: url("../Images/banner-image.png") center/cover no-repeat;
+    
+    /* Border & Shadow */
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 
+        0 25px 70px rgba(0, 0, 0, 0.25),
+        0 15px 40px rgba(0, 0, 0, 0.15);
+    
+    /* Positioning */
+    position: relative;
+    z-index: 10;
 }
 
-
+/* Blur Shadow (Figma Ellipse 97) */
 .banner-image::before {
-
-
-    position: absolute;
-
     content: "";
-
+    position: absolute;
+    
+    /* Figma exact size */
     width: 539px;
     height: 540px;
-
-
-    top: 11px;
-    left: 61px;
-
-
-    transform: rotate(-180deg);
-
-
+    
+    /* Center on image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-180deg);
+    
+    /* Circle blur */
     border-radius: 50%;
-
-
-    background:
-        radial-gradient(circle,
-            #CDCDCD 0%,
-
-            #C4C4C4 40%,
-
-            rgba(196, 196, 196, 0) 100%), url("../Images/banner-image.png");
-
-
+    background: radial-gradient(
+        circle,
+        #CDCDCD 0%,
+        #C4C4C4 40%,
+        rgba(196, 196, 196, 0) 100%
+    );
     mix-blend-mode: multiply;
-
-
     filter: blur(26.21px);
-
-
-    z-index: 1;
-
+    
+    /* Behind image */
+    z-index: -1;
 }
 
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .banner-image::before {
+        /* Scale down blur on mobile */
+        width: 120%;
+        height: 120%;
+    }
+}
+
+
+
 /* Container */
-.banner-image-container {
+/* .banner-image-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Main Image */
+ Main Image 
 .banner-image {
     position: relative;
     width: 480px;
@@ -306,8 +329,7 @@ a {
     z-index: 10;
 }
 
-/* Blur Shadow Behind Image */
-.banner-image::before {
+ .banner-image::before {
     content: "";
     position: absolute;
     width: 120%;
@@ -324,7 +346,7 @@ a {
     filter: blur(26px);
     z-index: -1;
 }
-
+  */
 
 
 
@@ -748,6 +770,35 @@ a {
     #dishes-section .row {
         gap: 30px
     }
+
+
+    #featured-section {
+        padding-bottom: 40px;
+    }
+
+    #app-features-section {
+    padding-top: 30px;
+    padding-bottom: 40px;}
+    
+
+    #install-section {
+        background-size: cover;
+    }
+
+
+    .isntall-row {
+        gap: 40px
+    }
+
+    .left-container img {
+        width: 100%;
+    }
+
+    .feature-cont {
+        flex-direction: column;
+        max-height: none;
+        gap: 30px;
+    }
 }
 
 
@@ -798,7 +849,7 @@ a {
     }
 
     .isntall-row {
-        gap:40px
+        gap: 40px
     }
 
     .feature-cont {
@@ -807,7 +858,7 @@ a {
         gap: 30px;
     }
 
-    
+
 
 
 }
