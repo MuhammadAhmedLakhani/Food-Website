@@ -516,12 +516,14 @@ a {
 #featured-section .top-row {
     padding-bottom: 64px;
 }
+
 .my-card {
     position: relative;
 }
+
 .my-card img {
     border-radius: 16px;
-    
+
 }
 
 .discount-badge {
@@ -533,9 +535,10 @@ a {
     left: 8%;
 }
 
-.discount-badge h3{
+.discount-badge h3 {
     color: var(--white-color);
 }
+
 .time-badge {
     padding: 8px 16px;
     background-color: #FFB30E;
@@ -545,7 +548,7 @@ a {
     left: 52%;
 }
 
-.time-badge h3{
+.time-badge h3 {
     color: var(--white-color);
 }
 
@@ -605,10 +608,12 @@ a {
 
 .view-btn {
     padding: 21px 48px;
-    background:linear-gradient(to right , #FFBA26 , #FF9A0E) ;
+    background: linear-gradient(to right, #FFBA26, #FF9A0E);
     border-radius: 14px;
     display: inline-block;
     margin: 0 auto;
+    box-shadow: 0 20px 40px 0 #FFAE004A,
+        0 5px 10px 0 #FFAE004A;
 }
 
 .view-btn h5 {
