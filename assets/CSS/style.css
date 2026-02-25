@@ -14,7 +14,7 @@
 
     --gradient-colour1: #FFB800;
     --gradient-colour2: #FF8A00;
-    --theme-primary: #FFB30E;
+    --theme-primary: #FFB30E;                         
 
     --combine-color: #F17228;
 
@@ -647,18 +647,59 @@ a {
 
 }
 
-.app-feature-text{
+.app-feature-text {
     font-size: 35px;
     font-weight: var(--font-bold);
     line-height: 1.2;
-    background: linear-gradient(to right,#FB3C00,#FFB800);
+    background: linear-gradient(to right, #FB3C00, #FFB800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
+
 /* app-features-section ends here */
 
+/* Install Section starts here */
 
+#install-section {
+    /* height: 70vh; */
+    background:
+    url("../Images/install-background.png"),
+    linear-gradient(to left, #FFAE00, #FF8A00);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.isntall-row {
+    gap: 140px;
+}
+
+.install-description h1{
+    font-size: 68px;
+    font-weight: var(--font-bold);
+    line-height: 1.06;
+    background: linear-gradient(to right,#FFB800,#FF8A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.install-description p {
+    font-weight: var(--font-regular);
+    font-size: var(--font-md);
+    line-height: 1.4;
+    color: #827E7E;
+}
+
+.store-btn {
+    background-color: var(--white-color);
+    box-shadow: 0 20px 40px 0px #FFAE004A ,
+    0px 5px 10px 0px #FFAE0042;
+    border-radius: 5px;
+}
+
+/* Install Section ends here */
 
 
 
