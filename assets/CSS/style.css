@@ -647,11 +647,7 @@ a {
 
 /* app-features-section starts here */
 
-#app-features-section {
-    padding-top: 130px;
-    padding-bottom: 80px;
-    background-color: var(--app-feature-bg);
-}
+
 
 .feature-cont {
     width: 100%;
@@ -664,6 +660,7 @@ a {
     padding: 55px;
     box-shadow: 0 27px 82px 0 #FFAE0047,
         0 14px 15px 0 #FFAE0003;
+    margin-bottom: 80px;
 }
 
 .app-feature-text {
@@ -681,14 +678,11 @@ a {
 /* Install Section starts here */
 
 #install-section {
-    /* height: 70vh; */
-    background:
-        url("../Images/install-background.png"),
-        linear-gradient(to left, #FFAE00, #FF8A00);
+    background: url("../Images/install-bg-img.png");
 
     background-repeat: no-repeat;
-    background-size: contain;
-
+    background-size: cover;
+    padding-top: 130px;
 }
 
 .isntall-row {
@@ -772,12 +766,58 @@ a {
     aspect-ratio: 16/9;
 }
 
+/* sandwiches-section ends here */
 .left-fried-container {
-    /* background: url("../Images/fried\ chicken.png"); */
+    background: url("../Images/fried\ chicken.png");
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+
+/* FriedChicken-Section Starts here */
+#FriedChicken-section {
+    margin-bottom: 80px;
+}
+
+/* FriedChicken-Section ENDS here */
+
+/* Pizza-Section Starts here */
+#Pizza-section {
+    padding-bottom: 135px;
+}
+
+/* Pizza-Section ends here */
+
+#Pizza-section .right-container {
+    background: url("../Images/pozza-image.png") center/cover no-repeat;
+    aspect-ratio: 16/9;
 }
 
 
-/* sandwiches-section ends here */
+/* Ready-Section Starts here */
+
+#Ready-Section {
+    background:
+        url('../Images/ready-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 91px;
+    padding-bottom: 75px;
+}
+
+.ready-details h1 {
+    font-size: 57px;
+    line-height: 97%;
+    font-weight: 900;
+    margin-bottom: 62px;
+}
+
+.ready-details a {
+    background: linear-gradient(to right, #F17228, #F15E28);
+    box-shadow: 0px 14px 32px 0px #FFB20E4A,
+        0px 5px 8px 0px #DE97003D;
+}
+
+/* Ready-Section ends here */
 
 
 
@@ -840,7 +880,7 @@ a {
 
 
     #install-section {
-        background-size: cover;
+        background: #FEEFD0;
     }
 
 
@@ -848,7 +888,7 @@ a {
         gap: 40px
     }
 
-    .left-container img {
+    #install-section .left-container img {
         width: 100%;
     }
 
@@ -857,6 +897,16 @@ a {
         max-height: none;
         gap: 30px;
     }
+
+
+    #sandwiches-section {
+        padding-top: 40px;
+    }
+
+    #Pizza-section {
+        padding-bottom: 35px;
+    }
+
 }
 
 
@@ -903,7 +953,7 @@ a {
 
 
     #install-section {
-        background-size: cover;
+        background: #FEEFD0;
     }
 
     .isntall-row {
@@ -920,6 +970,14 @@ a {
         gap: 30px;
     }
 
+
+    #sandwiches-section {
+        padding-top: 40px;
+    }
+
+    #Pizza-section {
+        padding-bottom: 35px;
+    }
 
 
 
@@ -943,6 +1001,15 @@ a {
     #banner-section {
         padding-top: 35px;
         padding-bottom: 35px;
+    }
+
+
+    .isntall-row {
+        gap: 40px
+    }
+
+    #install-section .left-container img {
+        width: 100%;
     }
 
 
