@@ -245,22 +245,22 @@ a {
 /* Food Bowl Image */
 .banner-image {
     /* Responsive width */
-     width: 100%;       
+    width: 100%;
     max-width: 500px;
     aspect-ratio: 1/1;
     /* Circle */
     border-radius: 50%;
     overflow: visible;
-    
+
     /* Image */
     background: url("../Images/banner-image.png") center/cover no-repeat;
-    
+
     /* Border & Shadow */
     border: 10px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 
+    box-shadow:
         0 25px 70px rgba(0, 0, 0, 0.25),
         0 15px 40px rgba(0, 0, 0, 0.15);
-    
+
     /* Positioning */
     position: relative;
     z-index: 10;
@@ -270,27 +270,25 @@ a {
 .banner-image::before {
     content: "";
     position: absolute;
-    
+
     /* Figma exact size */
     width: 539px;
     height: 540px;
-    
+
     /* Center on image */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-180deg);
-    
+
     /* Circle blur */
     border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        #CDCDCD 0%,
-        #C4C4C4 40%,
-        rgba(196, 196, 196, 0) 100%
-    );
+    background: radial-gradient(circle,
+            #CDCDCD 0%,
+            #C4C4C4 40%,
+            rgba(196, 196, 196, 0) 100%);
     mix-blend-mode: multiply;
     filter: blur(26.21px);
-    
+
     /* Behind image */
     z-index: -1;
 }
@@ -697,6 +695,7 @@ a {
     gap: 140px;
 }
 
+
 .install-description h1 {
     font-size: 68px;
     font-weight: var(--font-bold);
@@ -721,6 +720,64 @@ a {
 }
 
 /* Install Section ends here */
+
+/* sandwiches-section starts here */
+
+#sandwiches-section {
+    padding-top: 135px;
+    margin-bottom: 80px;
+}
+
+.sandwich-row {
+    box-shadow: 0px 27px 82px 0px #7C7C7C47,
+        0px 14px 15px 0px #7C7C7C0F;
+}
+
+.left-container {
+    padding: 56px;
+}
+
+.left-container a {
+    width: 100%;
+    font-weight: 900;
+    background: linear-gradient(to right, #FFB800, #FF8A00);
+
+}
+
+.deal-details {
+    padding: 64px 0px;
+    margin-bottom: 48px;
+}
+
+.deal-details h2 {
+    color: #FFB800;
+    padding-bottom: 19px;
+    line-height: 112.00000000000001%;
+}
+
+.deal-details span {
+    color: #212121;
+}
+
+.deal-details p {
+    color: #616161B0;
+    font-size: var(--font-md);
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.right-container {
+    background: url("../Images/sandwich-img.png") no-repeat;
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+
+.left-fried-container {
+    /* background: url("../Images/fried\ chicken.png"); */
+}
+
+
+/* sandwiches-section ends here */
 
 
 
@@ -777,9 +834,10 @@ a {
     }
 
     #app-features-section {
-    padding-top: 30px;
-    padding-bottom: 40px;}
-    
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
 
     #install-section {
         background-size: cover;
@@ -850,6 +908,10 @@ a {
 
     .isntall-row {
         gap: 40px
+    }
+
+    #install-section .left-container img {
+        width: 100%;
     }
 
     .feature-cont {
