@@ -7,7 +7,9 @@
 
 /* global styles */
 
-
+html {
+    overflow-x: hidden !important;
+}
 
 :root {
     /* colors */
@@ -819,9 +821,103 @@ a {
 
 /* Ready-Section ends here */
 
+/* Footer Section starts here */
+#footer-section {
+    padding: 99px 0px;
+    background-color: var(--Gray900);
+}
+
+#footer-section .r-1 h3 {
+    color: var(--white-color);
+    margin-bottom: 40px;
+}
+
+#footer-section .r-2 h5 {
+    font-weight: var(--font-regular);
+    color: var(--theme-grey);
+}
+
+#footer-section .r-2 {
+    margin-bottom: 99px;
+}
+
+.footer-hr hr {
+    border: none;
+    border-top: 2px solid #424242;
+}
+
+#footer-section .r-3 {
+    padding: 63px 0px;
+}
 
 
+#footer-section .sr-1 h3 {
+    color: var(--white-color);
+    margin-bottom: 40px;
+}
 
+#footer-section .sr-1 h5 {
+    font-weight: var(--font-regular);
+    color: var(--theme-grey);
+}
+
+#footer-section .sr-2 h5 {
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: var(--font-regular);
+    color: var(--theme-grey);
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    margin-bottom: 43px;
+}
+
+#footer-section .sr-4 h5 {
+    font-size: var(--font-md);
+    font-weight: var(--font-bold);
+    line-height: 1.4;
+    color: #BBBBBB;
+    margin-bottom: 40px;
+}
+
+.email-subscribe-container {
+    gap: 16px;
+}
+
+.input-wrapper {
+    padding: 16px;
+    background-color: #424242;
+    border-radius: 8px;
+    gap: 10px;
+    height: 60px;
+}
+
+.input-wrapper .email-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #ADADAD;
+    font-weight: var(--font-regular);
+    font-size: var(--font-md);
+    line-height: 1.4;
+}
+
+.subscribe-btn {
+    background: linear-gradient(to right, #FFB800, #FF8A00);
+    padding: 21px 24px;
+    color: var(--white-color);
+    font-size: var(--font-md);
+    font-weight: var(--font-bold);
+    border-radius: 8px;
+    height: 60px;
+}
+
+/* Footer Section ends here */
 
 /* Mobile Responsiveness starts  here */
 
