@@ -1075,6 +1075,17 @@ a {
         padding-bottom: 35px;
     }
 
+    #footer-section {
+        padding: 49px 0px;
+    }
+    #footer-section .r-3 {
+        padding: 33px 0px;
+    }
+
+    #footer-section .r-2 {
+        margin-bottom: 0px;
+    }
+
 
 
 }
