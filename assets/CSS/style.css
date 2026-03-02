@@ -940,18 +940,29 @@ a {
         gap: 30px
     }
 
+    .owl-nav {
+        position: relative;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
     .owl-carousel .owl-nav button.owl-next {
-        right: -38px;
+        position: relative;
+        left: 0;
+        right: 0;
     }
 
-    .owl-carousel .owl-nav button.owl-prev {
-        left: -35px;
+    .owl-carousel .owl-nav button.owl-prev:hover,
+    .owl-carousel .owl-nav button.owl-next:hover {
+        transform: none;
     }
-
 
 
     #featured-section {
         padding-bottom: 40px;
+    }
+
+    .featured-heading {
+        padding-bottom: 28px;
     }
 
     #app-features-section {
@@ -965,6 +976,7 @@ a {
 
     #install-section {
         background: #FEEFD0;
+        padding-top: 30px;
     }
 
 
@@ -997,11 +1009,23 @@ a {
 
     .deal-details {
         margin-bottom: 0px;
+        padding: 35px 0px;
     }
 
     .view-btn {
         padding: 18px 28px;
     }
+
+    .bottom-row {
+        padding-bottom: 48px;
+    }
+
+
+
+    .app-feature-text {
+        font-size: 25px;
+    }
+
 
     .left-container {
         padding: 26px;
@@ -1067,6 +1091,26 @@ a {
         padding: 40px 0px;
     }
 
+    .owl-nav {
+        position: relative;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev:hover,
+    .owl-carousel .owl-nav button.owl-next:hover {
+        transform: none;
+    }
+
+
+    .featured-heading {
+        padding-bottom: 28px;
+    }
 
     #install-section {
         background: #FEEFD0;
@@ -1076,8 +1120,17 @@ a {
         gap: 40px
     }
 
+    .install-description h1 {
+        font-size: 58px;
+    }
+
     #install-section .left-container img {
         width: 100%;
+    }
+
+
+    .app-feature-text {
+        font-size: 25px;
     }
 
     .feature-cont {
@@ -1086,6 +1139,10 @@ a {
         gap: 30px;
     }
 
+    .deal-details {
+        margin-bottom: 0px;
+        padding: 35px 0px;
+    }
 
     #sandwiches-section {
         padding-top: 40px;
@@ -1134,6 +1191,10 @@ a {
 
     .isntall-row {
         gap: 40px
+    }
+
+    .app-feature-text {
+        font-size: 25px;
     }
 
     #install-section .left-container img {
