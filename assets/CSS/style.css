@@ -27,7 +27,7 @@ html {
     --theme-grey: #F5F5F5;
     --theme-grey-500: #9E9E9E;
     --theme-black: #424242;
-    --badge-bg: #F1722833;
+    --badge-bg: #F1722833;  
 
     --how-bg-1: #FDEDCA00;
     --how-bg-2: #FFCE67;
@@ -173,7 +173,7 @@ a {
 
 #banner-section {
     background: url('../Images/banner.png') center/cover no-repeat;
-    padding-top: 132px;
+    padding: 132px 0px 20px;
 }
 
 .banner-modal {
@@ -303,53 +303,6 @@ a {
         height: 120%;
     }
 }
-
-
-
-/* Container */
-/* .banner-image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
- Main Image 
-.banner-image {
-    position: relative;
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-    overflow: visible;
-    background: url("../Images/banner-image.png") center/cover no-repeat;
-    box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.25),
-        0 15px 40px rgba(0, 0, 0, 0.15);
-    border: 10px solid rgba(255, 255, 255, 0.4);
-    z-index: 10;
-}
-
- .banner-image::before {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: radial-gradient(circle,
-            rgba(205, 205, 205, 0.7) 0%,
-            rgba(196, 196, 196, 0.4) 40%,
-            rgba(196, 196, 196, 0) 100%);
-    mix-blend-mode: multiply;
-    filter: blur(26px);
-    z-index: -1;
-}
-  */
-
-
-
 
 /* banner section ends here*/
 
@@ -484,24 +437,22 @@ a {
     background: #E55A0F;
 }
 
+
 /* Custom Owl Navigation Arrows */
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: #F5A623 !important;
-    color: white !important;
+    width: 70px;
+    height: 70px;
+    background: #FFB20E !important;    color: white !important;
     border-radius: 50%;
     font-size: 24px !important;
-    line-height: 50px !important;
     transition: all 0.3s;
-    box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
 }
 
 .owl-carousel .owl-nav button.owl-prev {
+    
     left: -60px;
 }
 
@@ -509,17 +460,12 @@ a {
     right: -60px;
 }
 
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover {
-    background: #E59520 !important;
+.popular-carousel .owl-nav button.owl-prev:hover,
+.popular-carousel .owl-nav button.owl-next:hover {
     transform: translateY(-50%) scale(1.1);
 }
 
 
-/* Owl Dots (optional) */
-.owl-carousel .owl-dots {
-    display: none;
-}
 
 /* Popular Items Section ends here*/
 
@@ -642,15 +588,8 @@ a {
 .view-btn h5 {
     color: var(--white-color);
 }
-
-
-
 /* featured Section ends here */
-
-/* app-features-section starts here */
-
-
-
+/* Install Section starts here */
 .feature-cont {
     width: 100%;
     height: auto;
@@ -674,11 +613,6 @@ a {
     -webkit-text-fill-color: transparent;
 
 }
-
-/* app-features-section ends here */
-
-/* Install Section starts here */
-
 #install-section {
     background: url("../Images/install-bg-img.png");
 
@@ -716,6 +650,41 @@ a {
 }
 
 /* Install Section ends here */
+
+#search-section {
+    background-color: #FEFAF1;
+    padding: 82px 0px 55px;
+}
+
+.search-carousel{
+    margin-bottom: 88px;
+}
+
+
+.search-cont h2 {
+    color: var(--Gray900);
+}
+
+.food-type h3{
+    color: #424242;
+} 
+
+.search-cont h5{
+    color: var(--theme-primary);
+} 
+
+.custom-nav button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; 
+  background: #FFB30E;       
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+
 
 /* sandwiches-section starts here */
 
@@ -923,7 +892,11 @@ a {
 
 @media screen and (min-width:320px) and (max-width:767px) {
     h1 {
-        font-size: 68px;
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 33px;
     }
 
     .address-container {
@@ -964,6 +937,15 @@ a {
         gap: 30px
     }
 
+    .owl-carousel .owl-nav button.owl-next {
+        right: -38px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        left: -35px;
+    }
+
+
 
     #featured-section {
         padding-bottom: 40px;
@@ -979,6 +961,10 @@ a {
         background: #FEEFD0;
     }
 
+
+    .install-description h1 {
+        font-size: 38px;
+    }
 
     .isntall-row {
         gap: 40px
@@ -1001,6 +987,34 @@ a {
 
     #Pizza-section {
         padding-bottom: 35px;
+    }
+
+    .deal-details {
+        margin-bottom: 0px;
+    }
+
+    .view-btn {
+        padding: 18px 28px;
+    }
+
+    .left-container {
+        padding: 26px;
+    }
+
+    .ready-details h1 {
+        font-size: 37px;
+    }
+
+    #footer-section {
+        padding: 49px 0px;
+    }
+
+    #footer-section .r-3 {
+        padding: 33px 0px;
+    }
+
+    #footer-section .r-2 {
+        margin-bottom: 0px;
     }
 
 }
@@ -1078,6 +1092,7 @@ a {
     #footer-section {
         padding: 49px 0px;
     }
+
     #footer-section .r-3 {
         padding: 33px 0px;
     }
