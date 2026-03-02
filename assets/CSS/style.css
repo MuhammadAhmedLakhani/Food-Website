@@ -4,7 +4,19 @@
     box-sizing: border-box
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 /* global styles */
 
 html {
@@ -62,7 +74,7 @@ html {
 
 @font-face {
     font-family: SourceSansPro;
-    src: url("../Fonts/source-sans-pro.bold.ttf");
+    src: url("../Fonts/SourceSans3-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -76,7 +88,7 @@ html {
 }
 
 body {
-    font-family: Source Sans Pro;
+    font-family: SourceSansPro;
 }
 
 /* Topography defaults*/
@@ -97,6 +109,7 @@ h3 {
     font-size: var(--font-lg);
     line-height: 1.2;
     font-weight: var(--font-bold);
+    margin-bottom: 0 !important;
 }
 
 h4 {
@@ -172,7 +185,7 @@ a {
 /* banner section starts here*/
 
 #banner-section {
-    background: url('../Images/banner.png') center/cover no-repeat;
+    background: url('../Images/Header.png') center/cover no-repeat;
     padding: 132px 0px 20px;
 }
 
