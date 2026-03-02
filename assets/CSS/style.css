@@ -27,7 +27,7 @@ html {
     --theme-grey: #F5F5F5;
     --theme-grey-500: #9E9E9E;
     --theme-black: #424242;
-    --badge-bg: #F1722833;  
+    --badge-bg: #F1722833;
 
     --how-bg-1: #FDEDCA00;
     --how-bg-2: #FFCE67;
@@ -445,14 +445,15 @@ a {
     top: 50%;
     width: 70px;
     height: 70px;
-    background: #FFB20E !important;    color: white !important;
+    background: #FFB20E !important;
+    color: white !important;
     border-radius: 50%;
     font-size: 24px !important;
     transition: all 0.3s;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    
+
     left: -60px;
 }
 
@@ -588,6 +589,7 @@ a {
 .view-btn h5 {
     color: var(--white-color);
 }
+
 /* featured Section ends here */
 /* Install Section starts here */
 .feature-cont {
@@ -613,6 +615,7 @@ a {
     -webkit-text-fill-color: transparent;
 
 }
+
 #install-section {
     background: url("../Images/install-bg-img.png");
 
@@ -656,7 +659,7 @@ a {
     padding: 82px 0px 55px;
 }
 
-.search-carousel{
+.search-carousel {
     margin-bottom: 88px;
 }
 
@@ -665,23 +668,23 @@ a {
     color: var(--Gray900);
 }
 
-.food-type h3{
+.food-type h3 {
     color: #424242;
-} 
+}
 
-.search-cont h5{
+.search-cont h5 {
     color: var(--theme-primary);
-} 
+}
 
 .custom-nav button {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%; 
-  background: #FFB30E;       
-  border: none;
-  color: white;
-  font-size: 20px;
-  margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #FFB30E;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 
@@ -956,6 +959,9 @@ a {
         padding-bottom: 40px;
     }
 
+    .search-carousel {
+        margin-bottom: 18px;
+    }
 
     #install-section {
         background: #FEEFD0;
