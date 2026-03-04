@@ -195,6 +195,10 @@ a {
     padding: 132px 0px;
 }
 
+.right-banner>img {
+    display: none;
+}
+
 .banner-details h1 {
     margin-bottom: 15px;
 }
@@ -618,6 +622,7 @@ a {
     background: linear-gradient(to right, #FFB800, #FF8A00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
 }
 
 .install-description p {
@@ -625,6 +630,7 @@ a {
     font-size: var(--font-md);
     line-height: 1.4;
     color: #827E7E;
+    margin-bottom: 40px;
 }
 
 .store-btn {
@@ -914,8 +920,15 @@ a {
     }
 
     #banner-section {
-        padding-top: 35px;
+        background: #ffb700;
+        padding: 35px 0px 10px;
     }
+
+    .right-banner img {
+        width: 100%;
+        display: block;
+    }
+
 
     #banner-section .row {
         gap: 30px
@@ -1060,7 +1073,7 @@ a {
     }
 
     #footer-section {
-        padding: 49px 0px;
+        padding: 49px 0px 0px;
     }
 
     #footer-section .r-3 {
@@ -1097,7 +1110,16 @@ a {
     #banner-section {
         padding-top: 35px;
         padding-bottom: 35px;
+        background: #ffb700;
+
     }
+
+    .right-banner {
+        height: 70vh;
+        background: url("../Images/banner-image.png") center no-repeat;
+    }
+
+
 
     #banner-section .row {
         gap: 30px
@@ -1214,7 +1236,7 @@ a {
 
 
     .isntall-row {
-        gap: 40px
+        gap: 0px
     }
 
     .app-feature-text {
@@ -1245,3 +1267,12 @@ a {
 }
 
 /* Laptop responsiveness ends here */
+
+/* Large Laptop Reponsiveness */
+
+
+@media screen and (min-width:1200px) and (max-width:1490px) {
+    .left-container {
+        padding: 16px;
+    }
+}
